@@ -17,6 +17,7 @@
 		71005EA61D1A934100B3375F /* QuestionsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 71005EA51D1A934100B3375F /* QuestionsUITests.m */; };
 		71005EB51D1A936500B3375F /* QucickSort.mm in Sources */ = {isa = PBXBuildFile; fileRef = 71005EB41D1A936500B3375F /* QucickSort.mm */; };
 		71005EB81D1A9DF100B3375F /* runloopQuestion.m in Sources */ = {isa = PBXBuildFile; fileRef = 71005EB71D1A9DF100B3375F /* runloopQuestion.m */; };
+		71005EBB1D1D359100B3375F /* QuestionUrls.m in Sources */ = {isa = PBXBuildFile; fileRef = 71005EBA1D1D359100B3375F /* QuestionUrls.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +58,8 @@
 		71005EB41D1A936500B3375F /* QucickSort.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = QucickSort.mm; sourceTree = "<group>"; };
 		71005EB61D1A9DF100B3375F /* runloopQuestion.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = runloopQuestion.h; sourceTree = "<group>"; };
 		71005EB71D1A9DF100B3375F /* runloopQuestion.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = runloopQuestion.m; sourceTree = "<group>"; };
+		71005EB91D1D359100B3375F /* QuestionUrls.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = QuestionUrls.h; sourceTree = "<group>"; };
+		71005EBA1D1D359100B3375F /* QuestionUrls.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = QuestionUrls.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				71005EB41D1A936500B3375F /* QucickSort.mm */,
 				71005EB61D1A9DF100B3375F /* runloopQuestion.h */,
 				71005EB71D1A9DF100B3375F /* runloopQuestion.m */,
+				71005EB91D1D359100B3375F /* QuestionUrls.h */,
+				71005EBA1D1D359100B3375F /* QuestionUrls.m */,
 			);
 			path = Questions;
 			sourceTree = "<group>";
@@ -283,6 +288,7 @@
 				71005E881D1A934100B3375F /* ViewController.m in Sources */,
 				71005E851D1A934100B3375F /* AppDelegate.m in Sources */,
 				71005EB81D1A9DF100B3375F /* runloopQuestion.m in Sources */,
+				71005EBB1D1D359100B3375F /* QuestionUrls.m in Sources */,
 				71005E821D1A934100B3375F /* main.m in Sources */,
 				71005EB51D1A936500B3375F /* QucickSort.mm in Sources */,
 			);
