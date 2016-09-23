@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		70EC34031D9544B100555001 /* 04地图.png in Resources */ = {isa = PBXBuildFile; fileRef = 70EC34021D9544B100555001 /* 04地图.png */; };
+		70EC34061D9544E800555001 /* ZDListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70EC34051D9544E800555001 /* ZDListView.m */; };
 		71005E821D1A934100B3375F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71005E811D1A934100B3375F /* main.m */; };
 		71005E851D1A934100B3375F /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 71005E841D1A934100B3375F /* AppDelegate.m */; };
 		71005E881D1A934100B3375F /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 71005E871D1A934100B3375F /* ViewController.m */; };
@@ -38,6 +40,9 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		70EC34021D9544B100555001 /* 04地图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "04地图.png"; sourceTree = "<group>"; };
+		70EC34041D9544E800555001 /* ZDListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDListView.h; sourceTree = "<group>"; };
+		70EC34051D9544E800555001 /* ZDListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDListView.m; sourceTree = "<group>"; };
 		71005E7D1D1A934100B3375F /* Questions.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Questions.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		71005E811D1A934100B3375F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		71005E831D1A934100B3375F /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -125,6 +130,9 @@
 				71005EB71D1A9DF100B3375F /* runloopQuestion.m */,
 				71005EB91D1D359100B3375F /* QuestionUrls.h */,
 				71005EBA1D1D359100B3375F /* QuestionUrls.m */,
+				70EC34021D9544B100555001 /* 04地图.png */,
+				70EC34041D9544E800555001 /* ZDListView.h */,
+				70EC34051D9544E800555001 /* ZDListView.m */,
 			);
 			path = Questions;
 			sourceTree = "<group>";
@@ -259,6 +267,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				71005E901D1A934100B3375F /* LaunchScreen.storyboard in Resources */,
+				70EC34031D9544B100555001 /* 04地图.png in Resources */,
 				71005E8D1D1A934100B3375F /* Assets.xcassets in Resources */,
 				71005E8B1D1A934100B3375F /* Main.storyboard in Resources */,
 			);
@@ -291,6 +300,7 @@
 				71005EBB1D1D359100B3375F /* QuestionUrls.m in Sources */,
 				71005E821D1A934100B3375F /* main.m in Sources */,
 				71005EB51D1A936500B3375F /* QucickSort.mm in Sources */,
+				70EC34061D9544E800555001 /* ZDListView.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -516,6 +526,7 @@
 				71005EAC1D1A934100B3375F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		71005EAD1D1A934100B3375F /* Build configuration list for PBXNativeTarget "QuestionsTests" */ = {
 			isa = XCConfigurationList;
@@ -524,6 +535,7 @@
 				71005EAF1D1A934100B3375F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		71005EB01D1A934100B3375F /* Build configuration list for PBXNativeTarget "QuestionsUITests" */ = {
 			isa = XCConfigurationList;
@@ -532,6 +544,7 @@
 				71005EB21D1A934100B3375F /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
