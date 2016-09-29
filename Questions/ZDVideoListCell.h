@@ -15,5 +15,10 @@
 @property (nonatomic,copy) NSString *downloadString;
 @property (nonatomic,copy) NSString *allString;
 
+@property (nonatomic,assign) NSInteger index;
 @property (nonatomic,strong) NSDictionary *sourceDictionary;
+@property (nonatomic,copy) void (^selectedBlock)(NSInteger index);
+
+@property (nonatomic,assign) BOOL isEdit;
+@property (nonatomic,assign) BOOL isSelected;
 @end

@@ -48,6 +48,7 @@
     // Do any additional setup after loading the view from its nib.
     _dataArray = [NSMutableArray array];
     self.bottomView.hidden = YES;
+    _selectedAarray = [NSMutableArray array];
     
     if (self.sourceArray) {
         [self.dataArray addObjectsFromArray:self.sourceArray];
@@ -110,6 +111,52 @@
     NSDictionary *dict = self.dataArray[indexPath.row];
     cell.sourceDictionary = dict;
     
+    cell.index = indexPath.row;
+    cell.isEdit = self.isEdit;
+    
+    if (self.isEdit) {
+        if (self.selectedAarray.count > 0) {
+            BOOL isExist = NO;
+            for (int i = 0; i < self.selectedAarray.count; i++) {
+                NSIndexPath *sIndexpath = self.selectedAarray[i];
+                if ([sIndexpath isEqual: indexPath]) {
+                    isExist = YES;
+                    break;
+                }
+            }
+            if (isExist) {
+                cell.isSelected = YES;
+            }else {
+                cell.isSelected = NO;
+            }
+        }else {
+            cell.isSelected = NO;
+        }
+    }else {
+        cell.isSelected = NO;
+    }
+    
+    __weak __typeof(self)weakSelf = self;
+    cell.selectedBlock = ^ (NSInteger index) {
+        BOOL isExist = NO;
+        if (weakSelf.selectedAarray.count > 0) {
+            for (int i = 0; i < weakSelf.selectedAarray.count; i++) {
+                NSIndexPath *sIndexpath = weakSelf.selectedAarray[i];
+                if (sIndexpath.row == index) {
+                    isExist = YES;
+                    break;
+                }
+            }
+            if (isExist) {
+                [weakSelf.selectedAarray removeObject:indexPath];
+            }else {
+                [weakSelf.selectedAarray addObject:indexPath];
+            }
+        }else {
+            [weakSelf.selectedAarray addObject:indexPath];
+        }
+        [weakSelf.tableView reloadData];
+    };
     return cell;
 }
 
@@ -123,14 +170,24 @@
 }
 - (IBAction)selectedAllAction:(id)sender {
     if (self.isEdit) {
-        
+        for (int i = 0; i < self.dataArray.count; i++) {
+            NSIndexPath *path = [NSIndexPath indexPathForRow:i inSection:0];
+            [self.selectedAarray addObject:path];
+        }
+        [self.tableView reloadData];
     }
     
 }
 - (IBAction)deleteAction:(id)sender {
     
     if (self.isEdit) {
-        
+        if (self.selectedAarray.count > 0) {
+            for (int i = 0; i < self.selectedAarray.count; i++) {
+                NSIndexPath *path = self.selectedAarray[i];
+                [self.dataArray removeObjectAtIndex:path.row];
+            }
+        }
+        [self.tableView reloadData];
     }
 }
 - (IBAction)stopAction:(id)sender {
