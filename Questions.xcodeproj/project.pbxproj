@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		7036108F1D9D285600BD82A3 /* ZDVideoListCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 7036108A1D9D285600BD82A3 /* ZDVideoListCell.m */; };
+		703610901D9D285600BD82A3 /* ZDVideoListCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7036108B1D9D285600BD82A3 /* ZDVideoListCell.xib */; };
+		703610911D9D285600BD82A3 /* ZDVideoListViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 7036108D1D9D285600BD82A3 /* ZDVideoListViewController.m */; };
+		703610921D9D285600BD82A3 /* ZDVideoListViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 7036108E1D9D285600BD82A3 /* ZDVideoListViewController.xib */; };
 		70EC34031D9544B100555001 /* 04地图.png in Resources */ = {isa = PBXBuildFile; fileRef = 70EC34021D9544B100555001 /* 04地图.png */; };
 		70EC34061D9544E800555001 /* ZDListView.m in Sources */ = {isa = PBXBuildFile; fileRef = 70EC34051D9544E800555001 /* ZDListView.m */; };
 		71005E821D1A934100B3375F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 71005E811D1A934100B3375F /* main.m */; };
@@ -40,6 +44,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		703610891D9D285600BD82A3 /* ZDVideoListCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDVideoListCell.h; sourceTree = "<group>"; };
+		7036108A1D9D285600BD82A3 /* ZDVideoListCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDVideoListCell.m; sourceTree = "<group>"; };
+		7036108B1D9D285600BD82A3 /* ZDVideoListCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZDVideoListCell.xib; sourceTree = "<group>"; };
+		7036108C1D9D285600BD82A3 /* ZDVideoListViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDVideoListViewController.h; sourceTree = "<group>"; };
+		7036108D1D9D285600BD82A3 /* ZDVideoListViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDVideoListViewController.m; sourceTree = "<group>"; };
+		7036108E1D9D285600BD82A3 /* ZDVideoListViewController.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = ZDVideoListViewController.xib; sourceTree = "<group>"; };
 		70EC34021D9544B100555001 /* 04地图.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "04地图.png"; sourceTree = "<group>"; };
 		70EC34041D9544E800555001 /* ZDListView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ZDListView.h; sourceTree = "<group>"; };
 		70EC34051D9544E800555001 /* ZDListView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ZDListView.m; sourceTree = "<group>"; };
@@ -133,6 +143,12 @@
 				70EC34021D9544B100555001 /* 04地图.png */,
 				70EC34041D9544E800555001 /* ZDListView.h */,
 				70EC34051D9544E800555001 /* ZDListView.m */,
+				703610891D9D285600BD82A3 /* ZDVideoListCell.h */,
+				7036108A1D9D285600BD82A3 /* ZDVideoListCell.m */,
+				7036108B1D9D285600BD82A3 /* ZDVideoListCell.xib */,
+				7036108C1D9D285600BD82A3 /* ZDVideoListViewController.h */,
+				7036108D1D9D285600BD82A3 /* ZDVideoListViewController.m */,
+				7036108E1D9D285600BD82A3 /* ZDVideoListViewController.xib */,
 			);
 			path = Questions;
 			sourceTree = "<group>";
@@ -267,6 +283,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				71005E901D1A934100B3375F /* LaunchScreen.storyboard in Resources */,
+				703610901D9D285600BD82A3 /* ZDVideoListCell.xib in Resources */,
+				703610921D9D285600BD82A3 /* ZDVideoListViewController.xib in Resources */,
 				70EC34031D9544B100555001 /* 04地图.png in Resources */,
 				71005E8D1D1A934100B3375F /* Assets.xcassets in Resources */,
 				71005E8B1D1A934100B3375F /* Main.storyboard in Resources */,
@@ -299,8 +317,10 @@
 				71005EB81D1A9DF100B3375F /* runloopQuestion.m in Sources */,
 				71005EBB1D1D359100B3375F /* QuestionUrls.m in Sources */,
 				71005E821D1A934100B3375F /* main.m in Sources */,
+				7036108F1D9D285600BD82A3 /* ZDVideoListCell.m in Sources */,
 				71005EB51D1A936500B3375F /* QucickSort.mm in Sources */,
 				70EC34061D9544E800555001 /* ZDListView.m in Sources */,
+				703610911D9D285600BD82A3 /* ZDVideoListViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
